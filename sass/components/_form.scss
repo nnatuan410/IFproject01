@@ -1,0 +1,84 @@
+.contact-form{
+    width: 50%;
+    color: $color-white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-right: 3rem;
+    @include responsive(SP){
+        width: 100%;
+        padding: 0;
+    }
+    &__label{
+        width: 20%;
+    }
+    &__group{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1.5rem 0;
+        @include responsive(SP){
+            align-items: unset;
+           flex-direction: column;
+        }
+        &--f1{
+            width: 37rem;
+            max-width: 37rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: .5rem;
+            & div{
+                width: 45%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            @include responsive(SP){
+                max-width: none;
+                align-self: auto;
+                width: 100%;
+
+             }
+        }
+    }
+    &__input{
+       width: 37rem;
+       max-width: 37rem;
+       height: 3.5rem;
+       padding-left: 1rem;
+       border-radius: 5px;
+       border: none;
+       margin-top: .5rem;
+       @include responsive(SP){
+           max-width: none;
+            width: 100%;
+        }
+       &:focus{
+           outline: none;
+       }
+       &--f1{
+        width: 80%;
+        height: 3.5rem;
+        padding-left: 1rem;
+        border-radius: 5px;
+        border: none;
+        &:focus{
+            outline: none;
+        }
+       }
+    }
+    &__area{
+        width: 37rem;
+        height: 11.5rem;
+        resize: none;
+        border: none;
+        border-radius: 5px;
+        padding: 1rem;
+        margin-top: .5rem;
+        @include responsive(SP){
+            max-width: none;
+             width: 100%;
+         }
+        &:focus{outline: none;}
+    }
+}

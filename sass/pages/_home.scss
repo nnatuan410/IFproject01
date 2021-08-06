@@ -1,0 +1,67 @@
+.section-service{
+    background-color: $color-secondary;
+    padding-bottom: 6.5rem;
+    @include responsive(SP){
+        padding-bottom: 3.5rem;
+    }
+}
+.section-about{
+    background-color: $color-primary;
+    padding: 3rem 0 5.5rem;
+    position: relative; 
+    @include responsive(SP){
+        padding-top: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    &__img{
+        position: absolute;
+        width: 50%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        @include responsive(SP){
+            position: static;
+            height: 35rem;
+            width: 100%;
+            margin-bottom: 4.5rem;
+        }
+        & img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.sectione-partners{
+    background-color: $color-white;
+    padding-bottom: 8rem;
+    @include responsive(SP){
+        margin-top: -2rem;
+        padding-bottom: 5rem;
+    }
+}
+.section-recruit{
+    background-image: linear-gradient(to right, rgba(126, 184, 39, 0.7), rgba(126, 184, 39, 0.7)),url('/images/recruit-img.png');
+    text-align: center;
+    padding-bottom: 7.5rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-contact{
+    background-color: $color-black;
+    padding-bottom: 4.2rem;
+    position: relative;
+    &__content{
+        display: flex;
+        align-items: center;
+        padding: 0 1.5rem;
+        @include responsive(SP){
+            flex-direction: column;
+            margin-top: -5rem;
+        }
+    }
+}

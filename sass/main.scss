@@ -1,0 +1,22 @@
+@import './abstracts/variables';
+
+@import './base/base';
+@import './base/typography';
+@import './base/utilities';
+@import './base/animation';
+
+@import './layout/_grid';
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/container';
+@import './layout/_footer';
+
+
+@import './pages/home';
+
+@import './components/servicebox';
+@import './components/about';
+@import './components/button';
+@import './components/partners';
+@import './components/form';
+@import './components/contact';

@@ -1,0 +1,27 @@
+.u-center-text{
+    text-align: center !important; 
+}
+.u-center-normal{
+    display: inline-block;
+    max-width: 550px;
+}
+.u-margin-top-{
+    margin: -2.5rem;
+}
+.text-uppercase{
+    text-transform: uppercase !important;
+}
+.no-wraptext{
+    white-space: nowrap;
+}
+.text-green-h3 {
+    font-size: 1.8rem;
+    color:  $color-primary;
+    font-weight: 700;
+}
+.color-white{
+    color: $color-white !important;
+}
+.fixed-body {
+  overflow: hidden;
+}

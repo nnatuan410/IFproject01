@@ -1,0 +1,60 @@
+.header{
+    // background-image: url("/images/slider01.png");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 100vh;
+    @include responsive(SP){
+        max-height: 46rem;
+    }
+    &__slide{
+        position: absolute;
+        top: 0;
+        bottom: $nav-height;
+        left: 0;
+        right: 0;
+        animation: fadeIntop .5s ease-in;
+        filter: brightness(.7);
+        @include responsive(SP){
+            bottom: 0;
+            top: $nav-height;
+        }
+        & img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-transition: opacity 1s ease-in-out;
+            -moz-transition: opacity 1s ease-in-out;
+            -o-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+
+            @include responsive(SP){
+                max-height: 38rem;
+            }
+        }
+
+        &--pic2{
+            animation-name: cf3FadeInOut;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-duration: 8s;
+            animation-direction: alternate;
+        }
+    }
+    &__text-box {
+        max-width: 745px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        @include responsive(SP){
+            top: 55%;
+            width: 100%;
+            padding: 0 2.5rem;
+        }
+        
+    }
+
+}
