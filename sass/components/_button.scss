@@ -217,7 +217,7 @@
     right: -50%;
     transform: translateX(-15%);
     margin-top: 1.5rem;
-    @include responsive(SP){
+    @include responsive(SP-big){
         transform: translateX(-50%);
     }
 }
