@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include responsive(SP){
+    @include responsive(SP-big){
         width: 100%;
         margin-top: 4rem;
         flex-direction: column;

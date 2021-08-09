@@ -45,6 +45,7 @@
     background-image: linear-gradient(to right, rgba(126, 184, 39, 0.7), rgba(126, 184, 39, 0.7));
     text-align: center;
     padding-bottom: 7.5rem;
+
 }
 
 .section-contact{
@@ -55,7 +56,7 @@
         display: flex;
         align-items: center;
         padding: 0 1.5rem;
-        @include responsive(SP){
+        @include responsive(SP-big){
             flex-direction: column;
             margin-top: -5rem;
         }
