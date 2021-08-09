@@ -13,7 +13,7 @@
 }
 @mixin  responsive($breakpoint) {
     @if $breakpoint == SP{
-        @media (max-width: 640px){@content}; //640px
+        @media (max-width: 767px){@content}; //640px
     }
     @if $breakpoint == SP-big{
         @media (max-width: 770px){@content}; //750px

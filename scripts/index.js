@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     // fixed scroll when open menu SP
     $('#navtoggle').click(function(){
         if($(this).is(":checked")){
@@ -10,16 +11,19 @@ $(document).ready(function(){
             console.log("unchecked")
         }
     });
+
     // fixed menu when srcoll over
-    var headerHeight = $('#header-slide').height();
-    console.log(headerHeight);
+    var headerHeight = document.getElementById("nav").offsetTop;
+    window.onresize = function() {
+        headerHeight = document.getElementById("nav").offsetTop;
+    };
     $(window).scroll(function(){
-        if($(window).scrollTop()>=headerHeight){
-            $('#nav').addClass('fixed-menu');
-        }else{
-            $('#nav').removeClass('fixed-menu');
-        }
-        })
+    if($(window).scrollTop()>=headerHeight && headerHeight > 0){
+        $('#nav').addClass('fixed-menu');
+    }else{
+        $('#nav').removeClass('fixed-menu');
+    }
+    })
     //paralax bg
     $('.parallax-window').parallax({imageSrc: './images/recruit-img.png'});
 
@@ -29,8 +33,8 @@ $(document).ready(function(){
 			scrollTop: 0
 	    }, 500);
 	});
-    //nav scroll content
 
+    //nav scroll content
     $("#service-link").click(function() {
         $('html,body').animate({
             scrollTop: $("#service").offset().top -80

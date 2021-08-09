@@ -88,9 +88,14 @@
     }
 
     &__logo{
-        padding: 1.1rem 1.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1.9rem;
         cursor: pointer;
-        display: inline-block;
+        & img{
+            width: 100%;
+        }
         @include responsive(SP){
             padding: 1.1rem 0;
         }
