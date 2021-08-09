@@ -12,6 +12,9 @@
     transform: translate(-50%, -50%);
 }
 @mixin  responsive($breakpoint) {
+    @if $breakpoint == SP-small{
+        @media (max-width: 320px){@content}; //640px
+    }
     @if $breakpoint == SP{
         @media (max-width: 767px){@content}; //640px
     }

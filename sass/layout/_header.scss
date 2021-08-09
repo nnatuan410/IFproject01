@@ -13,7 +13,6 @@
         left: 0;
         right: 0;
         animation: fadeIntop .5s ease-in;
-        filter: brightness(.7);
         @include responsive(SP){
             bottom: 0;
             top: $nav-height;

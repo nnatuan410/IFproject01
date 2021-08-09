@@ -32,3 +32,9 @@
     left: 0;
     z-index: 99999;
 }
+.bright-low{
+    filter: brightness(.7);
+    @include responsive(SP-big){
+        filter: brightness(.45);
+    }
+}
