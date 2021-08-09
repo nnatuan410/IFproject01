@@ -21,7 +21,7 @@ $(document).ready(function(){
         }
         })
     //paralax bg
-    $('.parallax-window').parallax({imageSrc: '/images/recruit-img.png'});
+    $('.parallax-window').parallax({imageSrc: './images/recruit-img.png'});
 
     // scroll top btn
     $('#btn-scrollTop').click(function(){
