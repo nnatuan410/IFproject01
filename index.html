@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <!-- Link Css -->
     <link rel="stylesheet" href="./css/style.css">
     <title>IF VietNam Co., Ltd</title>
 </head>
 <body>
-    <div class="wrapper">
         <!-- =========Header========== -->
-        <header class="header">
-            <div class="header__slide">
+        <header class="header" >
+            <div class="header__slide" id="header-slide">
                 <img src="./images/slider01.png" class="header__slide--pic1" alt="">
                 <img src="./images/slider02.png" class="header__slide--pic2" alt="">
             </div>
@@ -27,7 +27,7 @@
                 </p>
             </div>
               <!--============ NavBar ============-->
-            <div class="navigation">
+            <div class="navigation" id="nav">
                     <div class="navigation__logo">
                         <a href="#">
                             <img src="./images/logo.png" alt="Logo">
@@ -39,30 +39,29 @@
                             <span class="navigation__icon"></span>
                         </label>
                         <ul class="navigation__list" id="nav-bar">
-                            <li class="navigation__item">
+                            <li class="navigation__item" id="service-link">
                                 <a href="#" class="navigation__link"><span>SERVICE</span>サービス</a>
                             </li>
-                            <li class="navigation__item">
+                            <li class="navigation__item" id="about-link">
                                 <a href="#"  class="navigation__link"><span>ABOUT</span>ネットサポートについて</a>
                             </li>
-                            <li class="navigation__item">
+                            <li class="navigation__item" id="partners-link">
                                 <a href="#" class="navigation__link"><span>PARTNER</span>ビジネスパートナー</a>
                             </li>
-                            <li class="navigation__item">
+                            <li class="navigation__item" id="recruit-link">
                                 <a href="#"  class="navigation__link"><span>RECRUIT</span>採用情報</a>
                             </li>
-                            <li class="navigation__item">
-                                <a href="#"  class="navigation__link"><span>CONTACT</span>お問い合わせ</a>
+                            <li class="navigation__item" id="content-link" >
+                                <a href="#"class="navigation__link"><span>CONTACT</span>お問い合わせ</a>
                             </li>
                         </ul>
                     </div>
             </div>
-          
             <!--  -->
         </header>
         <main>
             <!--============ SERVICE ==========-->
-            <section class="section-service">
+            <section class="section-service" id="service">
                 <div class="container">
                     <div class="heading u-center-text">
                         <h2 class="heading-primary__title">
@@ -177,7 +176,7 @@
                 </div>
             </section>
             <!--============ ABOUT ==========-->
-            <section class="section-about">
+            <section class="section-about" id="about">
                 <div class="container">
                     <div class="about-content">
                         <div class="about-content__heading">
@@ -208,7 +207,7 @@
                 </div>
             </section>
             <!--============ PARTNERS ============-->
-            <section class="sectione-partners">
+            <section class="sectione-partners" id="partners">
                 <div class="container">
                     <div class="heading u-center-text">
                         <h2 class="heading-primary__title">
@@ -244,7 +243,7 @@
                 </div>
             </section>
             <!-- ============ RECRUIT =========== -->
-            <section class="section-recruit">
+            <section class="section-recruit parallax-window" data-parallax="scroll" data-image-src="./images/recruit-img.png" id="recruit">
                 <div class="container">
                     <div class="heading u-center-text">
                         <h2 class="heading-primary__title color-white">
@@ -269,7 +268,7 @@
                 </div>
             </section>
             <!-- ============= CONTACT ========== -->
-            <section class="section-contact">
+            <section class="section-contact" id="contact">
                 <div class="container">
                     <div class="heading u-center-text">
                         <h2 class="heading-primary__title color-white">
@@ -285,11 +284,11 @@
                                 <span class="contact-form__label">お名前</span>
                                 <div class="contact-form__group--f1">
                                     <div>
-                                        <label for="first-name" class="contact-form__label">姓</label>
+                                        <label for="first-name" class="contact-form__label--f1">姓</label>
                                         <input id="first-name" type="text" class="contact-form__input--f1"/>
                                     </div>
                                     <div>
-                                        <label for="last-name" class="contact-form__label">姓</label>
+                                        <label for="last-name" class="contact-form__label--f1">姓</label>
                                         <input id="last-name" type="text" class="contact-form__input--f1"/>
                                     </div>
                                   
@@ -339,8 +338,8 @@
                         </div>
 
                         <!-- Move up btn -->
-                        <div class="btn--moveup">
-                            <img src="./images/up-arrow.png" alt="">
+                        <div class="btn--moveup" id="btn-scrollTop">
+                                <img src="./images/up-arrow.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -352,7 +351,6 @@
                 </div>
             </footer>
         </main>
-    </div>
     <script src="./scripts/index.js"></script>
 </body>
 </html>

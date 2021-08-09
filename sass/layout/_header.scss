@@ -1,5 +1,4 @@
 .header{
-    // background-image: url("/images/slider01.png");
     background-size: cover;
     background-position: top;
     position: relative;
@@ -43,11 +42,11 @@
         }
     }
     &__text-box {
-        max-width: 745px;
+        max-width: 795px;
         position: absolute;
         top: 45%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -60%);
         text-align: center;
         @include responsive(SP){
             top: 55%;

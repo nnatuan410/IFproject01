@@ -42,13 +42,9 @@
     }
 }
 .section-recruit{
-    background-image: linear-gradient(to right, rgba(126, 184, 39, 0.7), rgba(126, 184, 39, 0.7)),url('/images/recruit-img.png');
+    background-image: linear-gradient(to right, rgba(126, 184, 39, 0.7), rgba(126, 184, 39, 0.7));
     text-align: center;
     padding-bottom: 7.5rem;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .section-contact{
