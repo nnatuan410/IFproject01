@@ -18,7 +18,7 @@
         @include responsive(SP-big){
             max-height: 28rem;
         }
-        @include responsive(SP-big){
+        @include responsive(SP-small){
             max-height: 14rem;
         }
     }
@@ -28,7 +28,7 @@
         @include responsive(SP-big){
             max-height: 28rem;
         }
-        @include responsive(SP-big){
+        @include responsive(SP-small){
             max-height: 14rem;
         }
     }
@@ -47,7 +47,10 @@
         font-weight: 400;
         color: $color-white;
         white-space: nowrap;
-        @include responsive(SP-big){
+        @include responsive(tab-port){
+            font-size: 2rem;
+         }
+        @include responsive(SP){
            font-size: 3.2rem;
            white-space: normal;
         }
@@ -57,7 +60,10 @@
         & span{
             display: block;
             font-size: 1.6rem;
-            @include responsive(SP-big){
+            @include responsive(tab-port){
+                font-size: 1.4rem;
+             }
+            @include responsive(SP){
                 font-size: 2.6rem;
             }
             @include responsive(SP-small){

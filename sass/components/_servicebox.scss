@@ -139,7 +139,7 @@
     }
     &__title{
         z-index: 5;
-        @include responsive(SP-big){
+        @include responsive(SP){
             font-size: 2.4rem;
         }
         @include responsive(SP-small){

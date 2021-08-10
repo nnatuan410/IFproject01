@@ -24,6 +24,9 @@ body {
     animation: moveInBottom 1.2s;
     animation-delay: .35s;
     animation-fill-mode: backwards;
+    @include responsive(tab-port){
+        font-size: 3.8rem;
+    }
     @include responsive(SP){
         font-size: 3.2rem;
     }
@@ -35,7 +38,7 @@ body {
         font-size: 3.6rem;
         text-transform: uppercase;
         color: $color-primary;
-        @include responsive(SP-big){
+        @include responsive(SP){
             font-size: 4.6rem;
         }
         @include responsive(SP-small){
@@ -48,7 +51,7 @@ body {
         line-height: 1;
         color: $color-grey;
         font-weight: 400;
-        @include responsive(SP-big){
+        @include responsive(SP){
             font-size: 2.4rem;
         }
         @include responsive(SP-small){
@@ -62,7 +65,7 @@ body {
         text-align: center;
         color: $color-black-subtitle;
         color: $color-light-black;
-        @include responsive(SP-big){
+        @include responsive(SP){
             font-size: 2.4rem;
             margin-top: 3rem;
         }
@@ -80,6 +83,9 @@ body {
     animation: moveInBottom 1.5s;
     animation-delay: .5s;
     animation-fill-mode: backwards;
+    @include responsive(tab-port){
+        font-size: 2.2rem;
+    }
     @include responsive(SP-small){
         font-size: 1.2rem;
     }

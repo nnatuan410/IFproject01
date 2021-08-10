@@ -53,13 +53,18 @@
         left: 50%;
         transform: translate(-50%, -60%);
         text-align: center;
+        @include responsive(tab-land){
+            max-width: none;
+            width: 100%;
+            padding: 0 3.5rem;
+        }
         @include responsive(SP){
             top: 55%;
             transform: translate(-50%, -50%);
             width: 100%;
             padding: 0 2.5rem;
         }
-        @include responsive(SP){
+        @include responsive(SP-small){
             top: 50%;
             padding: 0 1.25rem;
         }    

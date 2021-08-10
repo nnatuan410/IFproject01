@@ -220,12 +220,12 @@
     right: -50%;
     transform: translateX(-15%);
     margin-top: 1.5rem;
-    @include responsive(SP-big){
+    @include responsive(tab-port){
         transform: translateX(-50%);
     }
     @include responsive(SP-small){
-        transform:scale(.5) translateX(-100%)!important;
         margin-top: -1rem;
+        transform:scale(.5) translateX(-100%)!important;
     }
 }
 .btn--moveup{

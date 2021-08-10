@@ -34,7 +34,7 @@
 }
 .bright-low{
     filter: brightness(.7);
-    @include responsive(SP-big){
+    @include responsive(SP){
         filter: brightness(.45);
     }
 }

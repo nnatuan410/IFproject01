@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include responsive(SP-big){
+    @include responsive(tab-port){
         width: 100%;
         margin-top: 4rem;
         flex-direction: column;
@@ -14,7 +14,7 @@
     &__logo{
         padding-left: 3rem;
         margin-right: 5rem;
-        @include responsive(SP-big){
+        @include responsive(SP){
             padding: 0;
             margin: 0;
             max-width: 16.5rem;
