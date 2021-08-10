@@ -49,6 +49,9 @@
         border: 1px solid $color-white;
         background: transparent;
         transition: 0.5s;
+        @include responsive(SP-small){
+        transform: scale(.5);
+        }
     }
     &-1{
         display: block;
@@ -220,16 +223,30 @@
     @include responsive(SP-big){
         transform: translateX(-50%);
     }
+    @include responsive(SP-small){
+        transform:scale(.5) translateX(-100%)!important;
+        margin-top: -1rem;
+    }
 }
 .btn--moveup{
-    width: 70px;
-    height: 70px;
+    width: 7rem;
+    height: 7rem;
     background-color: $color-primary;
     position: absolute;
     bottom: 0;
     right: 0;
     cursor: pointer;
+    @include responsive(SP-small){
+       width: 3.5rem;
+       height: 3.5rem
+    }
     & img{
         @include absCenter;
+        @include responsive(SP-small){
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: scale(.5) translate(-100%,-100%);
+         }
     };
 }

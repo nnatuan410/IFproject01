@@ -8,9 +8,23 @@
         margin-top: 4rem;
         flex-direction: column;
     }
+    @include responsive(SP-small){
+        margin-top: 2rem;
+    }
     &__logo{
         padding-left: 3rem;
         margin-right: 5rem;
+        @include responsive(SP-big){
+            padding: 0;
+            margin: 0;
+            max-width: 16.5rem;
+        }
+        @include responsive(SP-small){
+            max-width: 8.25rem;
+        }
+        & img{
+            width: 100%;
+        }
     }
 }
 .contact-address{
@@ -23,6 +37,9 @@
     margin-right: 1rem;
     @include responsive(SP){
       font-size: 2.4rem;
+    }
+    @include responsive(SP-small){
+      font-size: 1.2rem;
     }
     &__list{
         padding-top: 2rem;

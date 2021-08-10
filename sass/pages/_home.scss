@@ -4,6 +4,9 @@
     @include responsive(SP){
         padding-bottom: 3.9rem;
     }
+    @include responsive(SP-small){
+        padding-bottom: 1.95rem;
+    }
 }
 .section-about{
     background-color: $color-primary;
@@ -13,6 +16,9 @@
         padding-top: 0;
         display: flex;
         flex-direction: column-reverse;
+    }
+    @include responsive(SP){
+      padding-bottom: 2.25rem;
     }
     &__img{
         position: absolute;
@@ -25,6 +31,9 @@
             height: 35rem;
             width: 100%;
             margin-bottom: 4.5rem;
+        }
+        @include responsive(SP-small){
+            height: 17.5rem;
         }
         & img{
             width: 100%;
@@ -51,6 +60,9 @@
     background-color: $color-black;
     padding-bottom: 4.2rem;
     position: relative;
+    @include responsive(SP-small){
+        padding-bottom: 2.1rem;
+    }
     &__content{
         display: flex;
         align-items: center;
@@ -58,6 +70,9 @@
         @include responsive(SP-big){
             flex-direction: column;
             margin-top: -5rem;
+        }
+        @include responsive(SP-small){
+            margin-top: -2.5rem;
         }
     }
 }

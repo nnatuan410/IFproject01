@@ -6,6 +6,9 @@
     @include responsive(SP){
         max-height: 46rem;
     }
+    @include responsive(SP-small){
+        max-height: 23rem;
+    }
     &__slide{
         position: absolute;
         top: 0;
@@ -17,6 +20,9 @@
             bottom: 0;
             top: $nav-height;
         }
+        @include responsive(SP-small){
+           top: 4rem;
+          }
         & img{
             position: absolute;
             width: 100%;
@@ -52,7 +58,11 @@
             transform: translate(-50%, -50%);
             width: 100%;
             padding: 0 2.5rem;
-        }  
+        }
+        @include responsive(SP){
+            top: 50%;
+            padding: 0 1.25rem;
+        }    
     }
 
 }

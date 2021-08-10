@@ -10,6 +10,9 @@ body {
     @include responsive(SP){
         padding: 4.5rem 0 5rem;
     }
+    @include responsive(SP-small){
+        padding: 2.25rem 0 2.5rem;
+    }
 }
 .heading-primary{
     font-size: 4.8rem;
@@ -24,10 +27,20 @@ body {
     @include responsive(SP){
         font-size: 3.2rem;
     }
+    @include responsive(SP-small){
+        font-size: 1.6rem;
+        padding-bottom: 1.7rem;
+    }
     &__title{
         font-size: 3.6rem;
         text-transform: uppercase;
         color: $color-primary;
+        @include responsive(SP-big){
+            font-size: 4.6rem;
+        }
+        @include responsive(SP-small){
+            font-size: 2.3rem;
+        }
     }
     &__subtitle{
         display: block;
@@ -37,6 +50,9 @@ body {
         font-weight: 400;
         @include responsive(SP-big){
             font-size: 2.4rem;
+        }
+        @include responsive(SP-small){
+            font-size: 1.2rem;
         }
     }
     &__desc{
@@ -50,6 +66,10 @@ body {
             font-size: 2.4rem;
             margin-top: 3rem;
         }
+        @include responsive(SP-small){
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+        }
     }
 }
 .heading-secondary{
@@ -60,5 +80,7 @@ body {
     animation: moveInBottom 1.5s;
     animation-delay: .5s;
     animation-fill-mode: backwards;
-    
+    @include responsive(SP-small){
+        font-size: 1.2rem;
+    }
 }
