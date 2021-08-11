@@ -1469,6 +1469,7 @@ body {
 }
 .contact-form__group--f1 {
   width: 100%;
+  max-width: 37rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1489,6 +1490,7 @@ body {
 }
 .contact-form__input {
   width: 100%;
+  max-width: 37rem;
   height: 4.5rem;
   padding: 0 1rem;
   border-radius: 5px;
@@ -1530,6 +1532,7 @@ body {
 }
 .contact-form__area {
   width: 100%;
+  max-width: 37rem;
   height: 11.5rem;
   resize: none;
   border: none;
