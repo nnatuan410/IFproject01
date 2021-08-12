@@ -47,12 +47,12 @@
                 top: -.1rem;
                 left: -.1rem;
                 width: .3rem;
-                height: 1rem;
+                height: 1.1rem;
             }
             &::after{
                 top: -.1rem;
                 left: -.1rem;
-                width: 1rem;
+                width: 1.1rem;
                 height: .3rem;
             }
         }
@@ -71,12 +71,12 @@
                 top: -.1rem;
                 right: -.1rem;
                 width: .3rem;
-                height: 1rem;
+                height: 1.1rem;
             }
             &::after{
                 top: -.1rem;
                 right: -.1rem;
-                width: 1rem;
+                width: 1.1rem;
                 height: .3rem;
             }
         }
@@ -92,15 +92,15 @@
                 background-color: $color-boder-box;
             }
             &::before{
-                top: -.9rem;
+                top: -1rem;
                 right: -.1rem;
                 width: .3rem;
-                height: 1rem;
+                height: 1.1rem;
             }
             &::after{
                 top: -.2rem;
                 right: -.1rem;
-                width: 1rem;
+                width: 1.1rem;
                 height: .3rem;
             }
         }
@@ -116,15 +116,15 @@
                 background-color: $color-boder-box;
             }
             &::before{
-                top: -.9rem;
+                top: -1rem;
                 right: -.2rem;
                 width: .3rem;
-                height: 1rem;
+                height: 1.1rem;
             }
             &::after{
                 top: -.2rem;
-                right: -.9rem;
-                width: 1rem;
+                right: -1rem;
+                width: 1.1rem;
                 height: .3rem;
             }
         }

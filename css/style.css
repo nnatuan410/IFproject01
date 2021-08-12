@@ -562,7 +562,6 @@ body {
 @media (max-width: 767px) {
   .section-about__img {
     position: static;
-    height: 35rem;
     width: 100%;
     margin-bottom: 4.5rem;
   }
@@ -590,7 +589,7 @@ body {
   padding-bottom: 4.6rem;
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(to right, rgba(126, 184, 39, 0.7), rgba(126, 184, 39, 0.5));
+  background-image: linear-gradient(to right, rgba(126, 184, 39, 0.7), rgba(126, 184, 39, 0.7));
 }
 
 .section-contact {
@@ -657,12 +656,12 @@ body {
   top: -0.1rem;
   left: -0.1rem;
   width: 0.3rem;
-  height: 1rem;
+  height: 1.1rem;
 }
 .service-box__item--corner1::after {
   top: -0.1rem;
   left: -0.1rem;
-  width: 1rem;
+  width: 1.1rem;
   height: 0.3rem;
 }
 .service-box__item--corner2 {
@@ -681,12 +680,12 @@ body {
   top: -0.1rem;
   right: -0.1rem;
   width: 0.3rem;
-  height: 1rem;
+  height: 1.1rem;
 }
 .service-box__item--corner2::after {
   top: -0.1rem;
   right: -0.1rem;
-  width: 1rem;
+  width: 1.1rem;
   height: 0.3rem;
 }
 .service-box__item--corner3 {
@@ -702,15 +701,15 @@ body {
   background-color: #a7babf;
 }
 .service-box__item--corner3::before {
-  top: -0.9rem;
+  top: -1rem;
   right: -0.1rem;
   width: 0.3rem;
-  height: 1rem;
+  height: 1.1rem;
 }
 .service-box__item--corner3::after {
   top: -0.2rem;
   right: -0.1rem;
-  width: 1rem;
+  width: 1.1rem;
   height: 0.3rem;
 }
 .service-box__item--corner4 {
@@ -726,15 +725,15 @@ body {
   background-color: #a7babf;
 }
 .service-box__item--corner4::before {
-  top: -0.9rem;
+  top: -1rem;
   right: -0.2rem;
   width: 0.3rem;
-  height: 1rem;
+  height: 1.1rem;
 }
 .service-box__item--corner4::after {
   top: -0.2rem;
-  right: -0.9rem;
-  width: 1rem;
+  right: -1rem;
+  width: 1.1rem;
   height: 0.3rem;
 }
 .service-box__item span {
@@ -894,7 +893,6 @@ body {
   color: #ffffff;
   background: transparent;
   white-space: nowrap;
-  overflow: hidden;
 }
 .btn--corner-1 {
   display: block;
@@ -912,12 +910,12 @@ body {
   top: -0.1rem;
   left: -0.1rem;
   width: 0.3rem;
-  height: 1rem;
+  height: 1.1rem;
 }
 .btn--corner-1::after {
   top: -0.1rem;
   left: -0.1rem;
-  width: 1rem;
+  width: 1.1rem;
   height: 0.3rem;
 }
 .btn--corner-2 {
@@ -936,12 +934,12 @@ body {
   top: -0.1rem;
   right: -0.1rem;
   width: 0.3rem;
-  height: 1rem;
+  height: 1.1rem;
 }
 .btn--corner-2::after {
   top: -0.1rem;
   right: -0.1rem;
-  width: 1rem;
+  width: 1.1rem;
   height: 0.3rem;
 }
 .btn--corner-3 {
@@ -957,15 +955,15 @@ body {
   background-color: #ffffff;
 }
 .btn--corner-3::before {
-  top: -0.9rem;
+  top: -1rem;
   right: -0.1rem;
   width: 0.3rem;
-  height: 1rem;
+  height: 1.1rem;
 }
 .btn--corner-3::after {
   top: -0.2rem;
   right: -0.1rem;
-  width: 1rem;
+  width: 1.1rem;
   height: 0.3rem;
 }
 .btn--corner-4 {
@@ -981,15 +979,15 @@ body {
   background-color: #ffffff;
 }
 .btn--corner-4::before {
-  top: -0.9rem;
+  top: -1rem;
   right: -0.2rem;
   width: 0.3rem;
-  height: 1rem;
+  height: 1.1rem;
 }
 .btn--corner-4::after {
   top: -0.2rem;
-  right: -0.9rem;
-  width: 1rem;
+  right: -1rem;
+  width: 1.1rem;
   height: 0.3rem;
 }
 .btn--corner span {
