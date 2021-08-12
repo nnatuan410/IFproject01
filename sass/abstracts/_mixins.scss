@@ -12,22 +12,15 @@
     transform: translate(-50%, -50%);
 }
 @mixin  responsive($breakpoint) {
-    @if $breakpoint == SP-small{
-        @media (max-width: 440px){@content}; //640px
-    }
     @if $breakpoint == SP{
-        @media (max-width: 767px){@content}; //640px
+        @media (max-width: 767px){@content}; //767px
     }
-    @if $breakpoint == SP-big{
-        @media (max-width: 770px){@content}; //750px
+    @if $breakpoint == scalePC{
+        @media only screen and (max-width: 1600px) and (min-width: 768px)
+        {@content}; //scale size fit to rem
     }
-    @if $breakpoint == tab-port{
-        @media (max-width: 800px){@content}; //980px
-    }
-    @if $breakpoint == tab-land{
-        @media (max-width: 1024px){@content};  //1024px
-    }
-    @if $breakpoint == big-desktop{
-        @media (max-width: 1600px){@content}; //1800px
+    @if $breakpoint == scaleSP{
+        @media only screen and (max-width: 767px)
+        {@content}; //scale size fit to rem
     }
 }

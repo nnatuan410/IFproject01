@@ -6,18 +6,36 @@
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 html {
     font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    @include responsive(scalePC){
+        font-size: calc(100vw / 160);
+    }
+    @include responsive(scaleSP){
+        font-size: calc(100vw / 76.8);
+    }
 }
-
 body{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    overflow-x: hidden;
+    letter-spacing: 0.014rem;
     font-family: 'Noto Sans JP', sans-serif;
 }
 a{
     text-decoration: none;
+}
+img{
+    border: none;
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
 }

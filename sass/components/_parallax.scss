@@ -1,0 +1,14 @@
+.parallax{
+    display: inline-block;
+    position: absolute;
+    width: 120%!important;
+    height: 140%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    pointer-events: none;
+    z-index: -1;
+    @include responsive(SP){
+        height: 120%;
+    }
+}

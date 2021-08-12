@@ -1,0 +1,25 @@
+.slide{
+    width: 100%;
+    position: relative;
+    @include responsive(SP){
+        margin-top: $nav-height;
+    }
+    & img{
+        width: 100%;
+        object-fit: cover;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+    }
+    &__pic2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation-name: FadeInOut;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-direction: alternate;
+    }
+}

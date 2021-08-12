@@ -38,3 +38,15 @@
         filter: brightness(.45);
     }
 }
+.is-sp{
+    display: none!important;
+    @include responsive(SP){
+        display: block!important;
+    }
+}
+.is-pc{
+    display: block!important;
+    @include responsive(SP){
+        display: none!important;
+    }
+}
