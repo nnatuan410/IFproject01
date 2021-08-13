@@ -34,7 +34,7 @@
         display: none;
         @include responsive(SP){
             display: block;
-            position: absolute;
+            position: fixed;
             right: 2rem;
             top: 2.1rem;
         }
@@ -59,11 +59,11 @@
         }
 
         &::before {
-            top: -1.6rem;
+            margin-top: 1.6rem;
         }
 
         &::after {
-            top: 1.6rem;
+            margin-top: -1.6rem;
         }
 
     }
@@ -71,14 +71,14 @@
         background-color: transparent;
     }
     &__checkbox:checked+&__button &__icon::before {
-        top: 0;
-        // transform: rotate(135deg);
+        -webkit-transform: translateY(-50%) rotate(45deg);
         transform: translateY(-50%) rotate(45deg);
+        margin-top: 0;
     }
     &__checkbox:checked+&__button &__icon::after {
-        top: 0;
-        // transform: rotate(-135deg);
+        -webkit-transform: translateY(-50%) rotate(-45deg);
         transform: translateY(-50%) rotate(-45deg);
+        margin-top: 0;
     }
 
     &__logo{

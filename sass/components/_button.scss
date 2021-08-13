@@ -49,7 +49,6 @@
         color: $color-white;
         background: transparent;
         white-space: nowrap;
-        // overflow: hidden;
     }
     &-1{
         display: block;
@@ -161,6 +160,7 @@
         transform: scaleY(0);
         transform-origin: bottom;
         transition: transform 0.35s;
+        z-index: 5000;
     }
     &:hover span:nth-child(1){
         transform: scaleY(1);
@@ -176,6 +176,7 @@
         transform-origin: right;
         transition: transform 0.35s;
         transition-delay: 0.35s;
+        z-index: 5000;
     }
     &:hover span:nth-child(2){
         transform: scaleX(1);
@@ -191,6 +192,7 @@
         transform: scaleY(0);
         transform-origin: top;
         transition: transform 0.35s;
+        z-index: 5000;
     }
     &:hover span:nth-child(3){
         transform: scaleY(1);
@@ -206,6 +208,7 @@
         transform-origin: left;
         transition: transform 0.35s;
         transition-delay: 0.35s;
+        z-index: 5000;
     }
     &:hover span:nth-child(4){
         transform: scaleX(1);
