@@ -5,7 +5,7 @@
     justify-content: space-between;
     @include responsive(SP){
         width: 100%;
-        margin-top: 4rem;
+        margin-top: 2rem;
         flex-direction: column;
     }
     &__logo{
@@ -13,7 +13,7 @@
         width: 18rem;
         @include responsive(SP){
             margin: 0;
-            max-width: 8rem;
+            max-width: 9rem;
         }
         & img{
             width: 100%;

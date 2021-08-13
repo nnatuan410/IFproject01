@@ -100,7 +100,7 @@ body {
   display: inline-block;
   margin-top: 4rem;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   color: #333333;
 }
@@ -1526,7 +1526,7 @@ body {
 @media (max-width: 767px) {
   .contact-info {
     width: 100%;
-    margin-top: 4rem;
+    margin-top: 2rem;
     flex-direction: column;
   }
 }
@@ -1537,7 +1537,7 @@ body {
 @media (max-width: 767px) {
   .contact-info__logo {
     margin: 0;
-    max-width: 8rem;
+    max-width: 9rem;
   }
 }
 .contact-info__logo img {
