@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    // document.execCommand('insertBrOnReturn', false, true);
     // fixed scroll when open menu SP
     $('#navtoggle').click(function(){
         if($(this).is(":checked")){

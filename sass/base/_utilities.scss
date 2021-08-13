@@ -42,11 +42,11 @@
 .is-sp{
     display: none!important;
     @include responsive(SP){
-        display: block!important;
+        display: inline-block!important;
     }
 }
 .is-pc{
-    display: block!important;
+    display: inline-block!important;
     @include responsive(SP){
         display: none!important;
     }
