@@ -30,36 +30,41 @@ $(document).ready(function(){
 	});
     //nav scroll content
     $("#service-link").click(function() {
+        let height = $('#nav').height();
         $('html,body').animate({
-            scrollTop: $("#service").offset().top -80
+            scrollTop: $("#service").offset().top - height
         }, 1000);
         $('#navtoggle').prop('checked', false);
         $('body').removeClass("fixed-body");
     })
     $("#about-link").click(function() {
+        let height = $('#nav').height();
         $('html,body').animate({
-            scrollTop: $("#about").offset().top -80
+            scrollTop: $("#about").offset().top - height
         }, 1000);
         $('#navtoggle').prop('checked', false);
         $('body').removeClass("fixed-body");
     })
     $("#partners-link").click(function() {
+        let height = $('#nav').height();
         $('html,body').animate({
-            scrollTop: $("#partners").offset().top - 80
+            scrollTop: $("#partners").offset().top - height
         }, 1000);
         $('#navtoggle').prop('checked', false);
         $('body').removeClass("fixed-body");
     })
     $("#recruit-link").click(function() {
+        let height = $('#nav').height();
         $('html,body').animate({
-            scrollTop: $("#recruit").offset().top -80
+            scrollTop: $("#recruit").offset().top - height
         }, 1000);
         $('#navtoggle').prop('checked', false);
         $('body').removeClass("fixed-body");
     })
     $("#content-link").click(function() {
+        let height = $('#nav').height();
         $('html,body').animate({
-            scrollTop: $("#contact").offset().top -80
+            scrollTop: $("#contact").offset().top - height
         }, 1000);
         $('#navtoggle').prop('checked', false);
         $('body').removeClass("fixed-body");
