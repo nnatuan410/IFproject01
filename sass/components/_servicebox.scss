@@ -5,9 +5,6 @@
         align-items: stretch;
         flex-wrap: wrap;
     }
-    &__item:nth-child(1){
-        padding: 2.075rem 0;
-    }
     &__item{
         display: flex;
         flex-direction: column;
@@ -17,7 +14,7 @@
         list-style: none;
         position: relative;
         width: calc(25% - 1.5rem);
-        padding: 3.2rem 0;
+        padding: 3.1rem 0;
         background-color: $color-white;
         border: 0.1rem solid $color-boder-box;
         text-transform: uppercase;
@@ -266,6 +263,7 @@
         z-index: 5;
         line-height: 1;
         margin-bottom: 2.2rem;
+        letter-spacing: -.04rem;
         @include responsive(SP){
             font-size: 1.2rem;
             margin-bottom: 1.2rem;
@@ -275,8 +273,7 @@
         max-width: 9.8rem;
         z-index: 5;
         @include responsive(SP){
-            max-width: 3.9rem;
-            // transform: scale(.5);
+            max-width: 4.9rem;
         }
         & img{
             max-width: 100%;
