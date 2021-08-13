@@ -38,6 +38,7 @@
         filter: brightness(.45);
     }
 }
+
 .is-sp{
     display: none!important;
     @include responsive(SP){
@@ -48,5 +49,15 @@
     display: block!important;
     @include responsive(SP){
         display: none!important;
+    }
+}
+.font-md-sp{
+    @include responsive(SP){
+        font-weight: 500;
+    }
+}
+.pd-bt-sp{
+    @include responsive(SP){
+        padding-bottom: 1rem!important;
     }
 }

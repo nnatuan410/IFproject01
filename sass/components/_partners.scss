@@ -36,14 +36,13 @@
         color: $color-white;
         white-space: nowrap;
         @include responsive(SP){
-           font-size: 3.2rem;
-           white-space: normal;
+           font-size: 1.6rem;
         }
         & span{
             display: block;
             font-size: 1.6rem;
             @include responsive(SP){
-                font-size: 2.6rem;
+                font-size: 1.3rem;
             }
         }
     }
@@ -54,5 +53,9 @@
         left: 50%;
         transform: translateX(-50%);
         padding-bottom: 2.3rem;
+        @include responsive(SP){
+            max-width: 2.4rem;
+            padding-bottom: 1.15rem;
+        }
     }
 }

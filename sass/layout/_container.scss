@@ -8,13 +8,6 @@
     margin: 0 auto;
     padding: 0 1rem;
     @include responsive(SP){
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
-    // @include responsive(tab-land){
-    //     margin: 0 2rem;
-    // }
-    // @include responsive(SP-small){
-    //     margin: 0 1rem;
-    // }
-    
 }

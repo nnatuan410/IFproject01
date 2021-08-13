@@ -2,11 +2,8 @@
     background-color: $color-primary;
     height: 3.3rem;
     @include responsive(SP){
-        height: 5.7rem;
+        height: 2.85rem;
     }
-    // @include responsive(SP-small){
-    //     height: 2.85rem;
-    // }
     &__text{
         width: 100%;
         height: 100%;
@@ -19,12 +16,8 @@
             color: $color-white;
             @include responsive(SP){
                 width: 100%;
-                font-size: 2.2rem;
+                font-size: 1.1rem;
             }
-            // @include responsive(SP-small){
-            //     width: 100%;
-            //     font-size: 1.1rem;
-            // }
         }
     }
 }

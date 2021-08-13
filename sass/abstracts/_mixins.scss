@@ -16,11 +16,11 @@
         @media (max-width: 767px){@content}; //767px
     }
     @if $breakpoint == scalePC{
-        @media only screen and (max-width: 1600px) and (min-width: 768px)
+        @media only screen and (max-width: 1100px) and (min-width: 768px)
         {@content}; //scale size fit to rem
     }
-    @if $breakpoint == scaleSP{
-        @media only screen and (max-width: 767px)
-        {@content}; //scale size fit to rem
-    }
+    // @if $breakpoint == scaleSP{
+    //     @media only screen and (max-width: 767px)
+    //     {@content}; //scale size fit to rem
+    // }   
 }

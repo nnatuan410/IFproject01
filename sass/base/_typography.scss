@@ -8,10 +8,7 @@ body {
 .heading{
     padding: 6.5rem 0 5.5rem;
     @include responsive(SP){
-        padding: 4.5rem 0 5rem;
-    }
-    @include responsive(SP-small){
-        padding: 2.25rem 0 2.5rem;
+        padding: 2.25rem 0 2.25rem;
     }
 }
 .heading-primary{
@@ -20,30 +17,20 @@ body {
     font-weight: 700;
     line-height: 1;
     padding-bottom: 3.4rem;
-    // letter-spacing: 1.2;
     animation: moveInBottom 1.2s;
     animation-delay: .35s;
     animation-fill-mode: backwards;
-    // @include responsive(tab-port){
-    //     font-size: 3.8rem;
-    // }
     @include responsive(SP){
-        font-size: 3.2rem;
+        font-size: 1.6rem;
+        padding-bottom: 1.7rem;
     }
-    // @include responsive(SP-small){
-    //     font-size: 1.6rem;
-    //     padding-bottom: 1.7rem;
-    // }
     &__title{
         font-size: 3.6rem;
         text-transform: uppercase;
         color: $color-primary;
         @include responsive(SP){
-            font-size: 4.6rem;
+            font-size: 2.3rem;
         }
-        // @include responsive(SP-small){
-        //     font-size: 2.3rem;
-        // }
     }
     &__subtitle{
         display: block;
@@ -52,27 +39,21 @@ body {
         color: $color-grey;
         font-weight: 400;
         @include responsive(SP){
-            font-size: 2.4rem;
+            font-size: 1.2rem;
         }
-        // @include responsive(SP-small){
-        //     font-size: 1.2rem;
-        // }
     }
     &__desc{
         display: inline-block;
         margin-top: 4rem;
         font-size: 1.4rem;
-        font-weight: 400;
+        font-weight: 300;
         text-align: center;
         color: $color-black-subtitle;
         @include responsive(SP){
-            font-size: 2.4rem;
-            margin-top: 3rem;
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            letter-spacing: -.05rem;
         }
-        // @include responsive(SP-small){
-        //     font-size: 1.2rem;
-        //     margin-top: 1.5rem;
-        // }
     }
 }
 .heading-secondary{
@@ -83,10 +64,7 @@ body {
     animation: moveInBottom 1.5s;
     animation-delay: .5s;
     animation-fill-mode: backwards;
-    // @include responsive(tab-port){
-    //     font-size: 2.2rem;
-    // }
-    // @include responsive(SP-small){
-    //     font-size: 1.2rem;
-    // }
+    @include responsive(SP){
+        font-size: 1.2rem;
+    }
 }

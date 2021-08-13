@@ -1,10 +1,4 @@
 .service-box{
-    @include responsive(SP-big){
-        margin-top: -.8rem;
-    }
-    @include responsive(SP-big){
-        margin-top: -.4rem;
-    }
     &__list{
         display: flex;
         justify-content: space-between;
@@ -12,7 +6,7 @@
         flex-wrap: wrap;
     }
     &__item:nth-child(1){
-        padding: 4.15rem 0;
+        padding: 2.075rem 0;
     }
     &__item{
         display: flex;
@@ -26,11 +20,14 @@
         padding: 3.2rem 0;
         background-color: $color-white;
         border: 0.1rem solid $color-boder-box;
+        text-transform: uppercase;
         margin-bottom: 1.5rem;
         cursor: pointer;
         @include responsive(SP){
-            width: calc(50% - 1.5rem);
-            margin-bottom: 3rem;
+            width: calc(50% - .75rem);
+            padding: 1.6rem 0;
+            margin-bottom: 1.5rem;
+            border: .05rem solid $color-boder-box;
         }
         &--corner1{
             display: block;
@@ -48,12 +45,24 @@
                 left: -.1rem;
                 width: .3rem;
                 height: 1.1rem;
+                @include responsive(SP){
+                    top: -.05rem;
+                    left: -.05rem;
+                    width: .15rem;
+                    height: .55rem;
+                }
             }
             &::after{
                 top: -.1rem;
                 left: -.1rem;
                 width: 1.1rem;
                 height: .3rem;
+                @include responsive(SP){
+                    top: -.05rem;
+                    left: -.05rem;
+                    width: .55rem;
+                    height: .15rem;
+                }
             }
         }
         &--corner2{
@@ -72,12 +81,24 @@
                 right: -.1rem;
                 width: .3rem;
                 height: 1.1rem;
+                @include responsive(SP){
+                    top: -.05rem;
+                    right: -.05rem;
+                    width: .15rem;
+                    height: .55rem;
+                }
             }
             &::after{
                 top: -.1rem;
                 right: -.1rem;
                 width: 1.1rem;
                 height: .3rem;
+                @include responsive(SP){
+                    top: -.05rem;
+                    right: -.05rem;
+                    width: .55rem;
+                    height: .15rem;
+                }
             }
         }
         &--corner3{
@@ -96,12 +117,24 @@
                 right: -.1rem;
                 width: .3rem;
                 height: 1.1rem;
+                @include responsive(SP){
+                    top: -.55rem;
+                    right: -.05rem;
+                    width: .15rem;
+                    height: .55rem;
+                }
             }
             &::after{
                 top: -.2rem;
                 right: -.1rem;
                 width: 1.1rem;
                 height: .3rem;
+                @include responsive(SP){
+                    top: -.1rem;
+                    right: -.05rem;
+                    width: .55rem;
+                    height: .15rem;
+                }
             }
         }
         &--corner4{
@@ -120,12 +153,24 @@
                 right: -.2rem;
                 width: .3rem;
                 height: 1.1rem;
+                @include responsive(SP){
+                    top: -.5rem;
+                    right: -.1rem;
+                    width: .15rem;
+                    height: .55rem;
+                }
             }
             &::after{
                 top: -.2rem;
                 right: -1rem;
                 width: 1.1rem;
                 height: .3rem;
+                @include responsive(SP){
+                    top: -.1rem;
+                    right: -.5rem;
+                    width: .55rem;
+                    height: .15rem;
+                }
             }
         }
         & span{
@@ -142,6 +187,9 @@
             transform-origin: bottom;
             transition: transform 0.35s;
             z-index: 5000;
+            @include responsive(SP){
+                width: .15rem;
+            }
         }
         &:hover span:nth-child(1){
             transform: scaleY(1);
@@ -158,6 +206,9 @@
             transition: transform 0.35s;
             transition-delay: 0.35s;
             z-index: 5000;
+            @include responsive(SP){
+                height: .15rem;
+            }
         }
         &:hover span:nth-child(2){
             transform: scaleX(1);
@@ -174,6 +225,9 @@
             transform-origin: top;
             transition: transform 0.35s;
             z-index: 5000;
+            @include responsive(SP){
+                width: .15rem;
+            }
         }
         &:hover span:nth-child(3){
             transform: scaleY(1);
@@ -190,6 +244,9 @@
             transition: transform 0.35s;
             transition-delay: 0.35s;
             z-index: 5000;
+            @include responsive(SP){
+                height: .15rem;
+            }
         }
         &:hover span:nth-child(4){
             transform: scaleX(1);
@@ -210,12 +267,17 @@
         line-height: 1;
         margin-bottom: 2.2rem;
         @include responsive(SP){
-            font-size: 2.4rem;
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
         }
     }
     &__img{
         max-width: 9.8rem;
         z-index: 5;
+        @include responsive(SP){
+            max-width: 3.9rem;
+            // transform: scale(.5);
+        }
         & img{
             max-width: 100%;
             height: auto;

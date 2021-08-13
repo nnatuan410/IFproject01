@@ -1,5 +1,9 @@
 .header{
     background-color: $color-secondary;
+    height: 100vh;
+    @include responsive(SP){
+        height: auto;
+    }
     &__text-box {
         position: absolute;
         width: 100%;
